@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_doctor_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.familydoctor.Personal.appointment.Process.DoctorInfo">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/title_layout">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/title_layout_back" />
+
+        <TextView
+            style="@style/title_layout_title"
+            android:text="医生信息" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/doctorpic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/doctor" />
+
+        <TextView
+            android:id="@+id/doctorname"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/doctorpic"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/doctorpic"
+            android:text="王医师"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/doctorclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/doctorname"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/doctorname"
+            android:text="主任医师"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/doctorabstract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctorname"
+            android:layout_below="@+id/doctorname"
+            android:layout_marginTop="5dp"
+            android:lines="2"
+            android:text="2001年毕业于南京中医药大学，拥有十年的针灸从医经验"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#aa000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="擅长领域"
+            android:textColor="#aa000000"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/shanchang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:text="神经病，腰腿痛，睡眠障碍，神经症"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#aa000000"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医学教育背景介绍"
+            android:textColor="#aa000000"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:text="主治医师，拥有多年的从医经验，广受患者好评"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#aa000000"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学术研究成果，获奖介绍"
+            android:textColor="#aa000000"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/chengguo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:text="发表医学论文十余篇，第一作者三篇"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#aa000000"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认预约"/>
+
+
+</LinearLayout>

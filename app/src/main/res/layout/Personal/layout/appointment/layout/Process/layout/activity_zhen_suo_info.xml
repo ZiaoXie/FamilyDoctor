@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zhen_suo_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.familydoctor.Personal.appointment.Process.ZhenSuoInfo">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/title_layout">
+        <ImageView
+            android:id="@+id/back"
+            style="@style/title_layout_back"/>
+
+        <TextView
+            style="@style/title_layout_title"
+            android:text="医院简介" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/hospital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="南京XX诊所"
+            android:textSize="40dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp">
+            <ImageView
+                android:id="@+id/daohang"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/daohang" />
+            <TextView
+                android:layout_below="@+id/daohang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位置"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aa000000"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/hospital_abstract"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX诊所是南京东部地区一所综合性针疗医院。2013年11月，医院建设完工并开诊试运营。"
+        android:lines="5"
+        android:textSize="25dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:id="@+id/servers"
+            android:layout_below="@+id/near"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务数:5万"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/pingfen"
+            android:layout_toRightOf="@+id/pipei"
+            android:layout_below="@+id/near"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评分:4.9"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"/>
+
+</LinearLayout>

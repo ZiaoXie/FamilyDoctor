@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.familydoctor">
+
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于写入缓存数据到扩展存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 用于进行网络定位 -->
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <!-- 用于访问GPS定位 -->
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+        <!-- 用于访问网络，网络定位需要上网 -->
+        <uses-permission android:name="android.permission.INTERNET" />
+        <!-- 用于读取手机当前的状态 -->
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <!-- 用于写入缓存数据到扩展存储卡 -->
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <!-- 用于申请调用A-GPS模块 -->
+        <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+        <!-- 用于申请获取蓝牙信息进行室内定位 -->
+        <uses-permission android:name="android.permission.BLUETOOTH" />
+        <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="e92dc51979625de6d553f84bd7a5892a" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".HomePage"
+            android:theme="@style/AppTheme.concealTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main.HealthInfo.MoreInfo"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Main.HealthInfo.HealthInfo"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Main.FindDoctor.FindDoctor"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Main.GuaHao.GuaHao"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name="com.zaaach.citypicker.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CityPicker.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Main.Near.Near"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Main.Body.Body"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Main.Near.DaoHang"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".WenZhen.DoctorSelect.DoctorSelect"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".WenZhen.DoctorSelect.DoctorList"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".WenZhen.WenZhenAction.PostOnline"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".WenZhen.ChatActivity"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Personal.Register"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Personal.login"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Personal.PersonalInfo"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Main.Body.XueWeiInfo"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Personal.appointment.MainAppointment"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Personal.appointment.Process.SureInfo"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Personal.appointment.Process.Recommand"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity
+            android:name=".Personal.appointment.Process.ZhenSuoInfo"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity android:name=".Personal.appointment.Process.AppointDoctor"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity android:name=".Personal.appointment.Process.DoctorInfo"
+            android:theme="@style/AppTheme.concealTitle" />
+        <activity android:name=".Personal.appointment.Process.SelectTime"
+            android:theme="@style/AppTheme.concealTitle" />
+    </application>
+
+</manifest>

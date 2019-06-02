@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_time"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.familydoctor.Personal.appointment.Process.SelectTime">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/title_layout">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/title_layout_back" />
+
+        <TextView
+            style="@style/title_layout_title"
+            android:text="预约时间" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/doctorpic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/doctor" />
+
+        <TextView
+            android:id="@+id/doctorname"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/doctorpic"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/doctorpic"
+            android:text="王医师"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/doctorclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/doctorname"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/doctorname"
+            android:text="主任医师"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/doctorabstract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctorname"
+            android:layout_below="@+id/doctorname"
+            android:layout_marginTop="5dp"
+            android:lines="2"
+            android:text="2001年毕业于南京中医药大学，拥有十年的针灸从医经验"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#aaAAAAAA" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017年09月23日"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#aaAAAAAA" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上午门诊"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            />
+        <Button
+            android:id="@+id/yuyue_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="不可预约"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aa000000" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下午门诊"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            />
+        <Button
+            android:id="@+id/yuyue_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="可预约"
+            android:textSize="15dp"
+            android:textColor="#0000ff"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aa000000" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="晚间门诊"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            />
+        <Button
+            android:id="@+id/yuyue_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="不可预约"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aa000000" />
+</LinearLayout>

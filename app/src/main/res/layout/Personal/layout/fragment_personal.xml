@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.familydoctor.Personal.Personal">
+
+    <RelativeLayout
+        android:id="@+id/personal_title"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/personal_back">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userhead"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@mipmap/headboy"
+            android:layout_margin="30dp"
+            android:layout_centerInParent="true"/>
+        <!--<TextView-->
+            <!--android:id="@+id/username"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="三秋"-->
+            <!--android:textSize="30dp"-->
+            <!--android:layout_alignTop="@+id/userhead"-->
+            <!--android:layout_toRightOf="@+id/userhead"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/username"-->
+            <!--android:layout_alignLeft="@+id/username"-->
+            <!--android:text="详细信息"-->
+            <!--android:textSize="20dp"/>-->
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/personal_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

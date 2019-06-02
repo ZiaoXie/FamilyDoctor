@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.administrator.familydoctor"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            res.srcDirs =
+                    [
+                            'src/main/res/layout/Personal',
+                            'src/main/res/layout/Personal/layout/appointment',
+                            'src/main/res/layout/Personal/layout/appointment/layout/Process',
+
+                            'src/main/res/layout/WenZhen',
+                            'src/main/res/layout/WenZhen/layout/DoctorSelect',
+                            'src/main/res/layout/WenZhen/layout/WenZhenAction',
+                            'src/main/res/layout/WenZhen/layout/WenZhenAction/layout/PostOnline',
+
+                            'src/main/res/layout/JiangTang',
+
+                            'src/main/res/layout/Main',
+                            'src/main/res/layout/Main/layout/HealthInfo',
+                            'src/main/res/layout/Main/layout/FindDoctor',
+                            'src/main/res/layout/Main/layout/GuaHao',
+                            'src/main/res/layout/Main/layout/Near',
+                            'src/main/res/layout/Main/layout/Body',
+                            'src/main/res/layout',
+                            'src/main/res'
+                    ]
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+
+    packagingOptions {
+        exclude 'assets/ap1.data'
+        exclude 'assets/ap1.data'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //compile 'com.amap.api:3dmap:latest.integration'
+    //compile 'com.amap.api:location:latest.integration'
+
+//    compile files('src/main/libs/Amap_2DMap_V5.2.0_20170627.jar')
+//    compile files('src/main/libs/AMap_Search_V5.3.1_20170817.jar')
+
+    compile files('src/main/libs/hyphenatechat_3.1.3.jar')
+    //compile files('src/main/libs/AMap3DMap_5.3.0_AMapNavi_5.3.0_20170815.jar')
+
+
+    compile 'com.amap.api:map2d:latest.integration'
+    compile 'com.amap.api:search:latest.integration'
+    compile 'com.amap.api:navi-3dmap:latest.integration'
+    compile 'com.android.support:design:25.3.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.zaaach:citypicker:1.1'
+    compile 'com.hyman:flowlayout-lib:1.1.1'
+    testCompile 'junit:junit:4.12'
+}

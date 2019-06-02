@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/articlepic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/doctor"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_toRightOf="@id/articlepic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="针灸治疗"
+            android:lines="1"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/articleabstract"
+            android:layout_below="@id/title"
+            android:layout_toRightOf="@id/articlepic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:lines="3"
+            android:text="您有一份针灸治疗的预约需要完善并提交"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

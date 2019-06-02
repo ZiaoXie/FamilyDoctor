@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_doctor"
+        android:icon="@mipmap/doctor"
+        android:title="签约医生" />
+    <item
+        android:id="@+id/item_near"
+        android:icon="@mipmap/guahao"
+        android:title="签约医院" />
+
+    <item
+        android:id="@+id/item_guahao"
+        android:icon="@mipmap/near"
+        android:title="诊所导航" />
+
+</menu>
